@@ -4,4 +4,22 @@ Author: Alejandro Abad de la Fuente
 Description: Un tema desde 0 para aprender Wordpress
 Version: 0.0.1
 Tags: Tema dabuting
+
 */
+body{
+    padding-top: 3.5rem;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
