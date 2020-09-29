@@ -8,7 +8,6 @@ Tags: Tema dabuting
 */
 body{
     padding-top: 3.5rem;
-    
 }
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -24,7 +23,7 @@ body{
       font-size: 3.5rem;
     }
   }
- .list-posts img{
-width: 100%;
+.list-posts img{
+width: 1000px;
 overflow: hidden;
  }
