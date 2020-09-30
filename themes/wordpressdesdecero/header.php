@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="<?php bloginfo('description')?>">
     <title> <?php bloginfo('name')?></title>
-
-
+    <?php wp_head(); ?>
 
 <!------------------------------------------------------------------------------------------------>
 
   </head>
   <body <?php body_class(); ?>>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+<?php if ( function_exists( 'the_custom_logo' ) ) {
+ the_custom_logo();
+}?>
+
+
   <a class="navbar-brand" href="<?php bloginfo("url") ?>"><?php bloginfo("name") ?></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -33,11 +38,10 @@
 
 <main role="main">
 
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
-    <div class="container">
-      <h1 class="display-3"><?php bloginfo('name'); ?></h1>
-      <p><?php bloginfo('description'); ?></p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-    </div>
+<div class="card bg-dark text-dark">
+  <img class="card-img" src="<?php header_image(); ?>" alt="Card image" width="<?php echo absint(get_custom_header()->width );?> height="<?php echo absint(get_custom_header()->height ); ?>">
+  <div class="card-img-overlay">
+  <h1 class="display-3 card-title"><?php bloginfo('name'); ?></h1>
+    <p class="card-text"><?php bloginfo('description'); ?></p>
   </div>
+</div>

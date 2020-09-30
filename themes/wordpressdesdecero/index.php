@@ -20,7 +20,12 @@
         <p><a class="btn btn-secondary" href="<?php the_permalink(); ?>" role="button">Ver detalles &raquo;</a></p>
       </div>
     <?php
-      }
+      }?>
+
+      <div class="nav-previous alignleft"><?php next_posts_link( 'Artículos antiguos' ); ?></div>
+ 
+    <div class="nav-next alignright"><?php previous_posts_link( 'Artículos Recientes' ); ?></div>
+      <?php
     }else{
       echo"NO DATA";
     }
